@@ -1,0 +1,239 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:17
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-add-web-page:before { content: "\f100"; }
+.flaticon-apps-development:before { content: "\f101"; }
+.flaticon-asp-logo:before { content: "\f102"; }
+.flaticon-binary-code-on-laptop:before { content: "\f103"; }
+.flaticon-binary-thinking:before { content: "\f104"; }
+.flaticon-blocked-text-page:before { content: "\f105"; }
+.flaticon-bullet-list-marked:before { content: "\f106"; }
+.flaticon-c-logo:before { content: "\f107"; }
+.flaticon-c-logo-1:before { content: "\f108"; }
+.flaticon-c-page:before { content: "\f109"; }
+.flaticon-calendar-small-page:before { content: "\f10a"; }
+.flaticon-cloud-coding:before { content: "\f10b"; }
+.flaticon-cloud-folder:before { content: "\f10c"; }
+.flaticon-cloud-inbox-downloading-files:before { content: "\f10d"; }
+.flaticon-cloud-link-to-database:before { content: "\f10e"; }
+.flaticon-cloud-linked-to-folders:before { content: "\f10f"; }
+.flaticon-cloud-protection:before { content: "\f110"; }
+.flaticon-cls-logo:before { content: "\f111"; }
+.flaticon-code-file:before { content: "\f112"; }
+.flaticon-coder-head:before { content: "\f113"; }
+.flaticon-coderwall-logo:before { content: "\f114"; }
+.flaticon-coding-funnel:before { content: "\f115"; }
+.flaticon-coding-ideas:before { content: "\f116"; }
+.flaticon-computer-bug:before { content: "\f117"; }
+.flaticon-computer-user:before { content: "\f118"; }
+.flaticon-connectivity-diagram:before { content: "\f119"; }
+.flaticon-css-file:before { content: "\f11a"; }
+.flaticon-css-page:before { content: "\f11b"; }
+.flaticon-cute-rocket-launching:before { content: "\f11c"; }
+.flaticon-database-interlinked:before { content: "\f11d"; }
+.flaticon-database-settings:before { content: "\f11e"; }
+.flaticon-database-sign:before { content: "\f11f"; }
+.flaticon-databases-symbol:before { content: "\f120"; }
+.flaticon-delete-settings:before { content: "\f121"; }
+.flaticon-digital-security:before { content: "\f122"; }
+.flaticon-draft-button:before { content: "\f123"; }
+.flaticon-electric-plugin:before { content: "\f124"; }
+.flaticon-enter-sign:before { content: "\f125"; }
+.flaticon-exit-symbol:before { content: "\f126"; }
+.flaticon-external-link:before { content: "\f127"; }
+.flaticon-folder-access:before { content: "\f128"; }
+.flaticon-folder-hierarchy:before { content: "\f129"; }
+.flaticon-folder-password:before { content: "\f12a"; }
+.flaticon-folder-settings:before { content: "\f12b"; }
+.flaticon-folders-linked:before { content: "\f12c"; }
+.flaticon-global-search-settings:before { content: "\f12d"; }
+.flaticon-globe-connection:before { content: "\f12e"; }
+.flaticon-html-laptop-browser:before { content: "\f12f"; }
+.flaticon-interlinked-clouds:before { content: "\f130"; }
+.flaticon-interlinked-folder:before { content: "\f131"; }
+.flaticon-java-coding:before { content: "\f132"; }
+.flaticon-js-file:before { content: "\f133"; }
+.flaticon-jsp-file:before { content: "\f134"; }
+.flaticon-laptop-browser:before { content: "\f135"; }
+.flaticon-link-page:before { content: "\f136"; }
+.flaticon-list-with-check-boxes:before { content: "\f137"; }
+.flaticon-locked-code:before { content: "\f138"; }
+.flaticon-low-speed:before { content: "\f139"; }
+.flaticon-maximise-button:before { content: "\f13a"; }
+.flaticon-mini-robot:before { content: "\f13b"; }
+.flaticon-mini-usb:before { content: "\f13c"; }
+.flaticon-minimise-button:before { content: "\f13d"; }
+.flaticon-mobile-and-pc-linked:before { content: "\f13e"; }
+.flaticon-multilayer-graph:before { content: "\f13f"; }
+.flaticon-navigation-toolbar:before { content: "\f140"; }
+.flaticon-new-tab:before { content: "\f141"; }
+.flaticon-page-settings:before { content: "\f142"; }
+.flaticon-page-unlock:before { content: "\f143"; }
+.flaticon-paper-pin:before { content: "\f144"; }
+.flaticon-pc-coding:before { content: "\f145"; }
+.flaticon-pc-settings:before { content: "\f146"; }
+.flaticon-php-file:before { content: "\f147"; }
+.flaticon-private-sign:before { content: "\f148"; }
+.flaticon-processor:before { content: "\f149"; }
+.flaticon-ps-file:before { content: "\f14a"; }
+.flaticon-py-file:before { content: "\f14b"; }
+.flaticon-python-snake:before { content: "\f14c"; }
+.flaticon-robotic-arm:before { content: "\f14d"; }
+.flaticon-save-disc:before { content: "\f14e"; }
+.flaticon-search-for-pc-bugs:before { content: "\f14f"; }
+.flaticon-server-database:before { content: "\f150"; }
+.flaticon-settings-tool:before { content: "\f151"; }
+.flaticon-smartphone-bug:before { content: "\f152"; }
+.flaticon-smartphone-settings:before { content: "\f153"; }
+.flaticon-speedometer-needle:before { content: "\f154"; }
+.flaticon-speedometer-on:before { content: "\f155"; }
+.flaticon-statistics-on-a-screen:before { content: "\f156"; }
+.flaticon-sun-covered-by-clouds:before { content: "\f157"; }
+.flaticon-three-gears:before { content: "\f158"; }
+.flaticon-three-routers:before { content: "\f159"; }
+.flaticon-unblocked-codes:before { content: "\f15a"; }
+.flaticon-universal-coding:before { content: "\f15b"; }
+.flaticon-upload-from-ooutbox-to-cloud:before { content: "\f15c"; }
+.flaticon-user-key-on-screen:before { content: "\f15d"; }
+.flaticon-vb-file:before { content: "\f15e"; }
+.flaticon-warning-sign-mobile:before { content: "\f15f"; }
+.flaticon-web-edition:before { content: "\f160"; }
+.flaticon-web-search:before { content: "\f161"; }
+.flaticon-web-settings-confirmed:before { content: "\f162"; }
+.flaticon-wireless-grib-globe:before { content: "\f163"; }
+    
+    $font-Flaticon-add-web-page: "\f100";
+    $font-Flaticon-apps-development: "\f101";
+    $font-Flaticon-asp-logo: "\f102";
+    $font-Flaticon-binary-code-on-laptop: "\f103";
+    $font-Flaticon-binary-thinking: "\f104";
+    $font-Flaticon-blocked-text-page: "\f105";
+    $font-Flaticon-bullet-list-marked: "\f106";
+    $font-Flaticon-c-logo: "\f107";
+    $font-Flaticon-c-logo-1: "\f108";
+    $font-Flaticon-c-page: "\f109";
+    $font-Flaticon-calendar-small-page: "\f10a";
+    $font-Flaticon-cloud-coding: "\f10b";
+    $font-Flaticon-cloud-folder: "\f10c";
+    $font-Flaticon-cloud-inbox-downloading-files: "\f10d";
+    $font-Flaticon-cloud-link-to-database: "\f10e";
+    $font-Flaticon-cloud-linked-to-folders: "\f10f";
+    $font-Flaticon-cloud-protection: "\f110";
+    $font-Flaticon-cls-logo: "\f111";
+    $font-Flaticon-code-file: "\f112";
+    $font-Flaticon-coder-head: "\f113";
+    $font-Flaticon-coderwall-logo: "\f114";
+    $font-Flaticon-coding-funnel: "\f115";
+    $font-Flaticon-coding-ideas: "\f116";
+    $font-Flaticon-computer-bug: "\f117";
+    $font-Flaticon-computer-user: "\f118";
+    $font-Flaticon-connectivity-diagram: "\f119";
+    $font-Flaticon-css-file: "\f11a";
+    $font-Flaticon-css-page: "\f11b";
+    $font-Flaticon-cute-rocket-launching: "\f11c";
+    $font-Flaticon-database-interlinked: "\f11d";
+    $font-Flaticon-database-settings: "\f11e";
+    $font-Flaticon-database-sign: "\f11f";
+    $font-Flaticon-databases-symbol: "\f120";
+    $font-Flaticon-delete-settings: "\f121";
+    $font-Flaticon-digital-security: "\f122";
+    $font-Flaticon-draft-button: "\f123";
+    $font-Flaticon-electric-plugin: "\f124";
+    $font-Flaticon-enter-sign: "\f125";
+    $font-Flaticon-exit-symbol: "\f126";
+    $font-Flaticon-external-link: "\f127";
+    $font-Flaticon-folder-access: "\f128";
+    $font-Flaticon-folder-hierarchy: "\f129";
+    $font-Flaticon-folder-password: "\f12a";
+    $font-Flaticon-folder-settings: "\f12b";
+    $font-Flaticon-folders-linked: "\f12c";
+    $font-Flaticon-global-search-settings: "\f12d";
+    $font-Flaticon-globe-connection: "\f12e";
+    $font-Flaticon-html-laptop-browser: "\f12f";
+    $font-Flaticon-interlinked-clouds: "\f130";
+    $font-Flaticon-interlinked-folder: "\f131";
+    $font-Flaticon-java-coding: "\f132";
+    $font-Flaticon-js-file: "\f133";
+    $font-Flaticon-jsp-file: "\f134";
+    $font-Flaticon-laptop-browser: "\f135";
+    $font-Flaticon-link-page: "\f136";
+    $font-Flaticon-list-with-check-boxes: "\f137";
+    $font-Flaticon-locked-code: "\f138";
+    $font-Flaticon-low-speed: "\f139";
+    $font-Flaticon-maximise-button: "\f13a";
+    $font-Flaticon-mini-robot: "\f13b";
+    $font-Flaticon-mini-usb: "\f13c";
+    $font-Flaticon-minimise-button: "\f13d";
+    $font-Flaticon-mobile-and-pc-linked: "\f13e";
+    $font-Flaticon-multilayer-graph: "\f13f";
+    $font-Flaticon-navigation-toolbar: "\f140";
+    $font-Flaticon-new-tab: "\f141";
+    $font-Flaticon-page-settings: "\f142";
+    $font-Flaticon-page-unlock: "\f143";
+    $font-Flaticon-paper-pin: "\f144";
+    $font-Flaticon-pc-coding: "\f145";
+    $font-Flaticon-pc-settings: "\f146";
+    $font-Flaticon-php-file: "\f147";
+    $font-Flaticon-private-sign: "\f148";
+    $font-Flaticon-processor: "\f149";
+    $font-Flaticon-ps-file: "\f14a";
+    $font-Flaticon-py-file: "\f14b";
+    $font-Flaticon-python-snake: "\f14c";
+    $font-Flaticon-robotic-arm: "\f14d";
+    $font-Flaticon-save-disc: "\f14e";
+    $font-Flaticon-search-for-pc-bugs: "\f14f";
+    $font-Flaticon-server-database: "\f150";
+    $font-Flaticon-settings-tool: "\f151";
+    $font-Flaticon-smartphone-bug: "\f152";
+    $font-Flaticon-smartphone-settings: "\f153";
+    $font-Flaticon-speedometer-needle: "\f154";
+    $font-Flaticon-speedometer-on: "\f155";
+    $font-Flaticon-statistics-on-a-screen: "\f156";
+    $font-Flaticon-sun-covered-by-clouds: "\f157";
+    $font-Flaticon-three-gears: "\f158";
+    $font-Flaticon-three-routers: "\f159";
+    $font-Flaticon-unblocked-codes: "\f15a";
+    $font-Flaticon-universal-coding: "\f15b";
+    $font-Flaticon-upload-from-ooutbox-to-cloud: "\f15c";
+    $font-Flaticon-user-key-on-screen: "\f15d";
+    $font-Flaticon-vb-file: "\f15e";
+    $font-Flaticon-warning-sign-mobile: "\f15f";
+    $font-Flaticon-web-edition: "\f160";
+    $font-Flaticon-web-search: "\f161";
+    $font-Flaticon-web-settings-confirmed: "\f162";
+    $font-Flaticon-wireless-grib-globe: "\f163";

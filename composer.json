@@ -1,0 +1,12 @@
+{
+    "name": "imran/page-content-editor",
+    "authors": [
+        {
+            "name": "thePi314",
+            "email": "the.pi@outlook.com"
+        }
+    ],
+    "require": {
+        "mikecao/flight": "^1.3"
+    }
+}
