@@ -11,21 +11,16 @@
     
     // Assets
     Flight::route('/js/*', function(){
+        header('Content-Type: text/js');
         include JS_DIR.substr($_SERVER['REQUEST_URI'],4);
     });
     Flight::route('/css/*', function(){
+        header('Content-Type: text/css');
         include STYLE_DIR.substr($_SERVER['REQUEST_URI'],5).'.css';
     });
     Flight::route('/img/*', function(){
         include IMAGES_DIR.substr($_SERVER['REQUEST_URI'],5).'.png';
     });
 
-
-    // View Routes
-    Flight::route('/', function(){
-        var_dump(wl_print_var($_SERVER));
-        die;
-    });
-
-    // Res Routes
+    require_once './view-routes.php';
 ?>
