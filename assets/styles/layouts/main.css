@@ -13,6 +13,8 @@ body {
     display: flex;
     flex-flow: row;
     align-items: center;
+    position: relative;
+    z-index: 100;
 }
 
 .header-logo {

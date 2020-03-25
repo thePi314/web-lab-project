@@ -4,7 +4,7 @@ class SPAComponent {
         this.link = link;
     }
 
-    async load() {
+    load() {
         return await ajax('GET', this.link);
     }
 }
