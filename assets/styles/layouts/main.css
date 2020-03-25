@@ -33,3 +33,8 @@ body {
     text-transform: uppercase;
     font-family: Arial;
 }
+
+#root {
+    height: 100vh;
+    width: 100%;
+}

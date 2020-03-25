@@ -1,6 +1,5 @@
 wl-image-slider {
     display: block;
-    width: 100vw;
     height: calc(100vh - 48px);
     position: relative;
 }
@@ -82,9 +81,9 @@ wl-image-slider {
 
 .image > img {
     height: 100%;
-    width: auto;
+    width: 100%;
 
-    margin: 0 auto;
+    margin: 0;
 }
 
 .slide-to-left{

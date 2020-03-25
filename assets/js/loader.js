@@ -1,19 +1,21 @@
 let libs = [
     '/js/libs/ajax',
-    '/js/libs/spa'
+    '/js/libs/spa',
 ]
 let web_components = [
     '/js/web-components/wl-image-slider'
 ]
 let components = [
-    '/js/components/root'
+    '/js/components/about',
+    '/js/components/askme',
+    '/js/components/home',
+    '/js/components/manual'
 ]
 
 let main = '/js/main';
 
-window.onload = () => {
+async function load_event(){
     let head   = document.head;
-    let loader = head.querySelector('script');
 
     function scriptNode(src) {
         let node = document.createElement('script');
@@ -27,14 +29,19 @@ window.onload = () => {
         return node;
     }
 
-    libs.forEach(lib => head.append(scriptNode(lib)));
+    libs.forEach(lib => {
+        head.append(scriptNode(lib));
+    });
     web_components.forEach(component => {
         head.append(styleNode('/css/'+component.slice(4)))
         head.append(scriptNode(component));
     });
     components.forEach(component => head.append(scriptNode(component)));
-
     head.append(scriptNode(main));
+}
 
-    head.removeChild(loader);
+window.onload = async () => {
+    let loader = document.head.querySelector('script');
+    await load_event();
+    document.head.removeChild(loader);
 }

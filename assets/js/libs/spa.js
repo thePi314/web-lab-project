@@ -4,8 +4,8 @@ class SPAComponent {
         this.link = link;
     }
 
-    load() {
-        return await ajax('GET', this.link);
+    async load() {
+        return (await ajax('GET', this.link));
     }
 }
 
@@ -17,29 +17,23 @@ class SPA {
         this.target     = document.getElementById(target_id);
     }
 
-    append( component , link = null ) {
-        if( link == null ) {
-            this.components.push(component);
-        }
-        else {
-            this.components.push(new SPAComponent(component,link));
-        }
+    append( component ) {
+        this.components.push(component);
     }
 
     find(lf_component) {
-        this.components.forEach((component)=>{
-            if( component.name === lf_component ) {
-                return component; 
+        for (let ind=0;ind<this.components.length;ind++) {
+            if( this.components[ind].name === lf_component ) {
+                return this.components[ind]; 
             }
-        });
+        }
 
         return null;
     }
 
-    load(lf_component) {
+    async load(lf_component) {
         let component = this.find(lf_component);
-        
-        this.target.innerHTML = component.load();
+        this.target.innerHTML = await component.load();
     }
 
     init() { 
