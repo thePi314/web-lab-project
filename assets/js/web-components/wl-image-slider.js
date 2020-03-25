@@ -28,6 +28,10 @@ class WLImageSlider extends HTMLElement {
   }
 
   connectedCallback() {
+    let indicators = document.createElement('ol');
+    indicators.classList.add('image-slider-indicators');
+    this.append(indicators);
+
     let wrapper = document.createElement('div');
     wrapper.classList.add('image-slider-inner');
 
@@ -36,10 +40,6 @@ class WLImageSlider extends HTMLElement {
       wrapper.append(this.createImageNode(image_srcs[ind], wrapper.children.length==0));
 
     this.append(wrapper);
-
-    let indicators = document.createElement('ol');
-    indicators.classList.add('image-slider-indicators');
-    this.append(indicators);
 
     this.appendEvents();
   }
