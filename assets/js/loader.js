@@ -15,8 +15,8 @@ let components = [
 let main = '/js/main';
 
 async function init_loadingLayer() {
-    let elem_content = document.querySelector('.event-content');
-    let elem_loading = document.querySelector('.event-loading');
+    let elem_content          = document.querySelector('.event-content');
+    let elem_loading          = document.querySelector('.event-loading');
 
     // Generate Bubbles
     let logo_element = elem_loading.querySelector('.header-logo');
@@ -47,6 +47,10 @@ async function init_loadingLayer() {
         elem_loading.append(createBubbleNode( generate_origin_y + getRandomInt(-offset_y / 2, offset_y / 2),generate_origin_x + getRandomInt(-offset_x / 2, offset_x / 2), getRandomInt(5, 12)));
     }
 
+    elem_loading.addEventListener('animationstart',()=>{
+        elem_content.classList.remove('hide');
+        document.body.style.overflowY = 'hidden';
+    });
     elem_loading.addEventListener('animationend', () => {
         if (elem_loading.classList.contains('done')) {
             elem_loading.classList.remove('done');
@@ -58,15 +62,14 @@ async function init_loadingLayer() {
             elem_content.remove();
 
             elem_loading.classList.add('hide');
+            document.body.style.overflowY = 'auto';
         }
     })
 
     let run_interval = setInterval(() => {
         let imgslider = elem_content.querySelector('wl-image-slider');
         if (imgslider.images_loaded) {
-            elem_content.classList.remove('hide');
             elem_loading.classList.add('done');
-
             clearInterval(run_interval);
         }
     }, 100);

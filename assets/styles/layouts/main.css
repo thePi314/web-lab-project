@@ -80,6 +80,11 @@ body {
 
 .event-loading.done {
     animation: slide-out-elliptic-top-fwd 2s forwards;
+    animation-delay: 2s;
+}
+
+.event-content {
+    overflow: hidden;
 }
 
 .hide {
