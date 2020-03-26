@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="loading">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Lab</title>
+
+    <link rel="icon" href="/img/logo">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/layouts/animations">
@@ -12,6 +14,9 @@
 
     <!-- JS -->
     <script type="application/javascript" src="/js/loader"></script>
+
+    <!-- Third Party Libs -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -19,15 +24,21 @@
         <img class="header-logo" src="/img/logo" alt="" />
         <div class="header-title"> Web Lab </div>
     </div>
-    <div class="event-content hide">
-        <wl-image-slider src[0]="https://picsum.photos/1853/903" src[1]="https://picsum.photos/1853/903"
-            src[2]="https://picsum.photos/1853/903"></wl-image-slider>
-
-        <div class="header">
-            <img class="header-logo" src="/img/logo" alt="" />
-            <div class="header-title"> Web Lab </div>
+    <wl-image-slider src[0]="https://picsum.photos/1853/903" src[1]="https://picsum.photos/1853/903"
+        src[2]="https://picsum.photos/1853/903">
+        <div class="button-belt">
+            <span class="material-icons" id="button-scroll">arrow_drop_down_circle</span>
         </div>
-        <div id="root"></div>
+    </wl-image-slider>
+
+    <div class="header">
+        <img class="header-logo" src="/img/logo" alt="" />
+        <div class="header-title"> Web Lab </div>
+    </div>
+    <div id="root"></div>
+    <div class="root-background" id="scroll-target">
+        <span class="ball ball-left"></span>
+        <span class="ball ball-right"></span>
     </div>
 </body>
 

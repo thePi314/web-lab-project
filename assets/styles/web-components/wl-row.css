@@ -1,0 +1,8 @@
+wl-row {
+    display: flex;
+    flex-flow: row;
+}
+
+wl-row > div {
+    margin: 0 auto;
+}
