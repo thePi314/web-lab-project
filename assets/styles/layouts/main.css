@@ -40,8 +40,9 @@ body {
 }
 
 #root {
-    height: calc(100vh - 48px);;
+    height: calc(100vh - 80px);;
     width: 100%;
+    padding-top: 32px;
 }
 
 .particle-bubble {
@@ -145,4 +146,52 @@ body {
 .ball.ball-right {
     margin-right: -128px;
     margin-left: auto;
+}
+
+.box {
+    min-width: 512px;
+    min-height: 612px;
+    box-shadow: 0px 0px 16px #17252a;
+}
+
+.box > .box-header {
+    height: 32px;
+    background: #2c3531;
+    color: whitesmoke;
+}
+
+.box > .box-body {
+    height: calc(100% - 32px);
+    color: #2c3531;
+    background: whitesmoke;
+}
+
+.button-big {
+    background: #2c3531;
+    color: #659dbd;
+    display: flex;
+    flex-flow: column;
+    max-width: 320px;
+}
+
+.button-big > * {
+    flex: 1;
+}
+
+.button-big > img {
+    width: 100%;
+    height: auto;
+}
+
+.button-big > .text {
+    display: flex;
+    flex-flow: column;
+    color: #659dbd;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.button-big > .text > span {
+    font-size: 92px;
 }

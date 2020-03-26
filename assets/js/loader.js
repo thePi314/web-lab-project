@@ -4,6 +4,7 @@ let libs = [
 ]
 let web_components = [
     '/js/web-components/wl-image-slider',
+    '/js/web-components/wl-belt-navigator',
     '/js/web-components/wl-row'
 ]
 let components = [

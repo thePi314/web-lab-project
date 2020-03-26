@@ -3,6 +3,6 @@ wl-row {
     flex-flow: row;
 }
 
-wl-row > div {
+wl-row > * {
     margin: 0 auto;
 }

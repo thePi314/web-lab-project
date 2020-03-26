@@ -1,0 +1,34 @@
+wl-belt-navigator {
+    padding: 32px;
+    display: flex;
+    flex-flow: row;
+    min-height: 650px;
+    justify-content: center;
+    width: max-content;
+    margin: 24px auto;
+}
+
+wl-belt-navigator > * {
+    z-index: 5;
+    flex: 1;
+}
+
+wl-belt-navigator > *.grow {
+    -webkit-animation: scale-up-ver-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-ver-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    z-index: 6;
+}
+
+wl-belt-navigator > *.growen {
+    -webkit-transform: scaleY(1.1);
+    transform: scaleY(1.1);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    z-index: 7;
+}
+
+wl-belt-navigator > *.shrink {
+    -webkit-animation: scale-down-ver-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-down-ver-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    z-index: 5;
+}

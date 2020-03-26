@@ -11,7 +11,6 @@ class WLRow extends HTMLElement {
   }
 
   connectedCallback() {
-    this.children = this.childNodes;
-    
+    //this.children = this.childNodes;
   }
 });
