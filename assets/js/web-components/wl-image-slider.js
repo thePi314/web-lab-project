@@ -2,6 +2,9 @@ window.customElements.define('wl-image-slider',
 class WLImageSlider extends HTMLElement {
   constructor() {
     super();
+
+    this.images_loaded   = false;
+    this.loading_counter = 0;
   }
 
   createImageNode(src,active=false) {
@@ -74,6 +77,14 @@ class WLImageSlider extends HTMLElement {
       indicators_target.appendChild(indicator_element);
     }
     
+    let images = this.querySelectorAll('img');
+    for (let ind=0;ind<images.length;ind++) {
+      let image = images.item(ind) ;
+
+      image.onload = () => {
+        self.images_loaded = (++this.loading_counter >= images.length);
+      };
+    }
 
     function toggleQuote(index, self) {
       let indicators_targets = self.querySelector('.image-slider-indicators').children;
