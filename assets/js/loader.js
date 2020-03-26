@@ -71,6 +71,7 @@ async function load_event() {
     function scriptNode(src) {
         let node = document.createElement('script');
         node.src = src;
+        node.async = false;
         return node;
     }
     function styleNode(src) {
