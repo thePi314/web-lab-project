@@ -50,7 +50,14 @@ async function init_loadingLayer() {
     elem_loading.addEventListener('animationend', () => {
         if (elem_loading.classList.contains('done')) {
             elem_loading.classList.remove('done');
-            elem_loading.classList.add('hide')
+
+            let body_element = document.body;
+            while(elem_content.childNodes.length > 0)
+                body_element.append(elem_content.childNodes[0]);
+                
+            elem_content.remove();
+
+            elem_loading.classList.add('hide');
         }
     })
 

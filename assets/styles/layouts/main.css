@@ -41,27 +41,6 @@ body {
     width: 100%;
 }
 
-@keyframes fade-out {
-    100% { 
-        opacity: 0; 
-        display: none;
-    }
-}
-
-@keyframes bubbles {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-        transform:translate(0, -20%);
-    }
-    100% {
-        opacity: 0;
-        transform:translate(0, -1000%);
-    }
-}
-
 .particle-bubble {
     opacity:0;
     position: absolute;
@@ -100,9 +79,13 @@ body {
 }
 
 .event-loading.done {
-    animation: fade-out 2s forwards;
+    animation: slide-out-elliptic-top-fwd 2s forwards;
 }
 
 .hide {
     display: none;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }

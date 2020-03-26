@@ -4,6 +4,7 @@ class WLImageSlider extends HTMLElement {
     super();
 
     this.images_loaded   = false;
+    this.created         = false;
     this.loading_counter = 0;
   }
 
@@ -31,20 +32,24 @@ class WLImageSlider extends HTMLElement {
   }
 
   connectedCallback() {
-    let indicators = document.createElement('ol');
-    indicators.classList.add('image-slider-indicators');
-    this.append(indicators);
+    if (!this.created) {
+      let indicators = document.createElement('ol');
+      indicators.classList.add('image-slider-indicators');
+      this.append(indicators);
 
-    let wrapper = document.createElement('div');
-    wrapper.classList.add('image-slider-inner');
+      let wrapper = document.createElement('div');
+      wrapper.classList.add('image-slider-inner');
 
-    let image_srcs = this.collectImages();
-    for(let ind = 0;ind < image_srcs.length;ind++)
-      wrapper.append(this.createImageNode(image_srcs[ind], wrapper.children.length==0));
+      let image_srcs = this.collectImages();
+      for(let ind = 0;ind < image_srcs.length;ind++)
+        wrapper.append(this.createImageNode(image_srcs[ind], wrapper.children.length==0));
 
-    this.append(wrapper);
+      this.append(wrapper);
 
-    this.appendEvents();
+      this.appendEvents();
+
+      this.created = true;
+    }
   }
 
   appendEvents() {
