@@ -119,15 +119,22 @@ body {
     display: flex;
     bottom: 0;
     overflow: hidden;
+    padding-top: 32px;
 }
 
-.root-background > .ball {
+.ball {
     background: #2c3531;
     width: 256px;
     height: 256px;
     display: block;
     border-radius: 50%;
     margin-bottom: -128px;
+    text-align: center;
+}
+
+.ball:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
 }
 
 .ball.ball-left {
@@ -138,6 +145,20 @@ body {
 .ball.ball-right {
     margin-right: -128px;
     margin-left: auto;
+}
+
+.ball.ball-left > span {
+    margin-left: 60px;
+    font-size: 48px;
+    margin-top: 80px;
+    color: #659dbd;
+}
+
+.ball.ball-right > span {
+    margin-right: 50px;
+    font-size: 48px;
+    margin-top: 80px;
+    color: #659dbd;
 }
 
 .box {
