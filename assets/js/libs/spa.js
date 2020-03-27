@@ -34,15 +34,15 @@ class SPA {
         return null;
     }
 
-    appendEnterExitEvent(name) {
-        let component = this.target.querySelector('#'+name);
+    appendEnterExitEvent() {
+        let component = this.target.querySelector('#'+this.current_component.name);
         component.addEventListener('animationend',()=>{
-            if(component.classList.contains('exit')) {
-                this.target.removeChild(component);
-            }
-
             if(component.classList.contains('enter')) {
                 component.classList.remove('enter');
+            }
+
+            if(component.classList.contains('exit')) {
+                this.target.removeChild(component);
             }
         });
     }
@@ -63,11 +63,11 @@ class SPA {
         if( component == null )
             return;
 
-        this.target.append( this.stringToNode( (await component.load()) ) );
-        this.current_component = component;
+        this.target.append(this.stringToNode(await component.load()));
         await component.load_events(this);
 
-        this.appendEnterExitEvent(lf_component);
+        this.current_component = component;
+        this.appendEnterExitEvent();
     }
 
     init() { 
