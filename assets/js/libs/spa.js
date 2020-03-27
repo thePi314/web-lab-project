@@ -63,7 +63,7 @@ class SPA {
         if( component == null )
             return;
 
-        this.target.append(this.stringToNode((await component.load())));
+        this.target.append( this.stringToNode( (await component.load()) ) );
         this.current_component = component;
         await component.load_events(this);
 
