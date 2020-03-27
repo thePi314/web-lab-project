@@ -214,10 +214,6 @@ body {
     font-size: 92px;
 }
 
-.component {
-    
-}
-
 .component.enter {
     position: absolute;
     -webkit-animation: slide-in-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -226,8 +222,8 @@ body {
 
 .component.exit {
     position: absolute;
-    -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: slide-out-top 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: slide-out-top 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .hide {
