@@ -20,8 +20,8 @@ wl-belt-navigator > *.grow {
 }
 
 wl-belt-navigator > *.growen {
-    -webkit-transform: scaleY(1.1);
-    transform: scaleY(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     z-index: 7;

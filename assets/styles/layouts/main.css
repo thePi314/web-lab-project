@@ -188,8 +188,13 @@ body {
     flex-flow: column;
     color: #659dbd;
 
+    font-size: 24px;
     justify-content: center;
     text-align: center;
+
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: 600;
 }
 
 .button-big > .text > span {
