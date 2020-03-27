@@ -1,0 +1,19 @@
+#about {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    font-size: 20px;
+    font-family: Arial;
+    display: flex;
+    flex-flow: column;
+    width: calc(100% - 128px);
+    margin: 0 auto;
+    justify-content: center;
+    color: #2c3531;
+}
+
+.about-title {
+    font-size: 32px;
+    font-weight: 600;
+}

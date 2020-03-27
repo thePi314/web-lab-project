@@ -91,14 +91,6 @@ body {
     overflow: hidden;
 }
 
-.hide {
-    display: none;
-}
-
-.overflow-hidden {
-    overflow: hidden;
-}
-
 .button-belt {
     position: absolute;
     width: 100%;
@@ -199,4 +191,22 @@ body {
 
 .button-big > .text > span {
     font-size: 92px;
+}
+
+.component {
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.component.exit {
+    -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.hide {
+    display: none;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
