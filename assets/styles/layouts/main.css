@@ -215,11 +215,17 @@ body {
 }
 
 .component {
-    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
+
+.component.enter {
+    position: absolute;
+    -webkit-animation: slide-in-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .component.exit {
+    position: absolute;
     -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
