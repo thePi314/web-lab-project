@@ -7,6 +7,8 @@ class SPAComponent {
     async load() {
         return (await ajax('GET', this.link));
     }
+
+    load_events(spa_controller = null) {}
 }
 
 class SPA {
@@ -15,6 +17,7 @@ class SPA {
         this.root       = 0;
 
         this.target     = document.getElementById(target_id);
+        this.current_component = null;
     }
 
     append( component ) {
@@ -31,9 +34,41 @@ class SPA {
         return null;
     }
 
+    appendEnterExitEvent(name) {
+        let component = this.target.querySelector('#'+name);
+        component.addEventListener('animationend',()=>{
+            if(component.classList.contains('exit')) {
+                this.target.removeChild(component);
+            }
+
+            if(component.classList.contains('enter')) {
+                component.classList.remove('enter');
+            }
+        });
+    }
+
+    stringToNode(string) {
+        let node       = document.createElement('div');
+        node.innerHTML = string;
+
+        return node.childNodes.item(0);
+    }
+
     async load(lf_component) {
+        if( this.current_component != null )
+            this.target.querySelector('#'+this.current_component.name).classList.add('exit');
+
+        window.location.hash = '#' + lf_component;
+
         let component = this.find(lf_component);
-        this.target.innerHTML = await component.load();
+        if( component == null )
+            return;
+
+        this.target.append(this.stringToNode((await component.load())));
+        this.current_component = component;
+        await component.load_events(this);
+
+        this.appendEnterExitEvent(lf_component);
     }
 
     init() { 
