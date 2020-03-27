@@ -50,7 +50,6 @@ class SPA {
     stringToNode(string) {
         let node       = document.createElement('div');
         node.innerHTML = string;
-
         return node.childNodes.item(0);
     }
 
