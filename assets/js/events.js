@@ -35,7 +35,7 @@ function init_loadingLayer() {
         if (elem_loading.classList.contains('done')) {
             elem_loading.classList.remove('done');
 
-            elem_loading.classList.add('hide');
+            elem_loading.remove();
         }
 
         document.querySelector('html').classList.remove('loading');

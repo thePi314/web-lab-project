@@ -36,13 +36,14 @@ class SPA {
 
     appendEnterExitEvent() {
         let component = this.target.querySelector('#'+this.current_component.name);
+        console.log(component);
         component.addEventListener('animationend',()=>{
             if(component.classList.contains('enter')) {
                 component.classList.remove('enter');
             }
 
             if(component.classList.contains('exit')) {
-                this.target.removeChild(component);
+                component.remove();
             }
         });
     }

@@ -43,6 +43,7 @@ body {
     height: calc(100vh - 80px);;
     width: 100%;
     padding-top: 32px;
+    position: relative;
 }
 
 .particle-bubble {
@@ -215,7 +216,6 @@ body {
 }
 
 .component.enter {
-    position: absolute;
     -webkit-animation: slide-in-bottom 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-bottom 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
