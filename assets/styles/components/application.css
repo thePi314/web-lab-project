@@ -2,8 +2,16 @@
     margin: 0 auto;
 }
 
-.header > .header-buttons {
+.header > .header-buttons > .button {
+    color: #659dbd;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+}
 
+.header > .header-buttons > .button > span {
+    font-size: 32px;
 }
 
 #application {
@@ -22,12 +30,16 @@
 #application .component-settings {
     height: 100vh;
     position: fixed;
-    top: 48px;
-    left: calc(100% - 256px);
+    top: 0;
+    left: 100%;
     width: 256px;
     background: #2c3531;
     z-index: 101;
     box-shadow: 0px 0px 16px #17252a;
+}
+
+#application .component-settings.collapsed {
+    left: calc(100% - 256px);
 }
 
 #root {
