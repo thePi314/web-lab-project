@@ -1,4 +1,4 @@
-function init_loadingLayer() {
+function init_loadingLayer(load_rule=0) {
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -17,7 +17,19 @@ function init_loadingLayer() {
         return bubble;
     }
 
+    document.querySelector('html').classList.add('loading');
     let elem_loading          = document.querySelector('.event-loading');
+    if( elem_loading == null ) {
+        elem_loading = document.createElement('div');
+        elem_loading.classList.add('event-loading');
+
+        let img = document.createElement('img');
+        img.src = '/img/logo';
+        img.classList.add('header-logo');
+
+        elem_loading.append(img);
+        document.body.prepend(elem_loading);
+    }
 
     // Generate Bubbles
     let logo_element = elem_loading.querySelector('.header-logo');
@@ -34,20 +46,31 @@ function init_loadingLayer() {
     elem_loading.addEventListener('animationend', () => {
         if (elem_loading.classList.contains('done')) {
             elem_loading.classList.remove('done');
-
-            elem_loading.classList.add('hide');
+            elem_loading.remove();
         }
 
         document.querySelector('html').classList.remove('loading');
     })
 
-    let run_interval = setInterval(() => {
-        let imgslider = document.body.querySelector('wl-image-slider');
-        if (imgslider.images_loaded) {
-            elem_loading.classList.add('done');
-            clearInterval(run_interval);
-        }
-    }, 100);
+    let run_interval = null;
+    switch(load_rule) {
+        case 0:
+            run_interval = setInterval(() => {
+                let imgslider = document.body.querySelector('wl-image-slider');
+                if (imgslider.images_loaded) {
+                    elem_loading.classList.add('done');
+                    clearInterval(run_interval);
+                }
+            }, 100);
+            break;
+
+        case 1:
+            setTimeout(()=>{
+                elem_loading.classList.add('done');
+            },3000);
+            break;
+    }
+
 }
 
 function init_scroll_button() {

@@ -11,7 +11,8 @@ let components = [
     '/js/components/about',
     '/js/components/askme',
     '/js/components/home',
-    '/js/components/manual'
+    '/js/components/manual',
+    '/js/components/application'
 ]
 let scripts = [
     '/js/events',

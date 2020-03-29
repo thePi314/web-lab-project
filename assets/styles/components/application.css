@@ -1,0 +1,35 @@
+.header > .header-toolbar {
+    margin: 0 auto;
+}
+
+.header > .header-buttons {
+
+}
+
+#application {
+    width: 100%;
+    height: 100%;
+}
+
+#application .canvas {
+    background: white;
+    max-width: 80%;
+    min-height: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 16px #17252a;
+}
+
+#application .component-settings {
+    height: 100vh;
+    position: fixed;
+    top: 48px;
+    left: calc(100% - 256px);
+    width: 256px;
+    background: #2c3531;
+    z-index: 101;
+    box-shadow: 0px 0px 16px #17252a;
+}
+
+#root {
+    overflow-y: auto;
+}

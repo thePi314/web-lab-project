@@ -5,6 +5,7 @@ spa_controller.append(new ComponentHome());
 spa_controller.append(new ComponentManual());
 spa_controller.append(new ComponentAskMe());
 spa_controller.append(new ComponentAbout());
+spa_controller.append(new ComponentApplication());
 
 spa_controller.init();
 
